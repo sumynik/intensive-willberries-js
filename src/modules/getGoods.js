@@ -27,5 +27,5 @@ const getGoods = () => {
     // localStorage.removeItem('goods')
 }
 
-getGoods()
+export default getGoods
 

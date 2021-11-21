@@ -16,6 +16,18 @@ const cart = function() {
     closeBtn.addEventListener('click', function () {
         cartModal.style.display = '';
     })
+
+    cartModal.addEventListener('click', evt => {
+        if(!evt.target.closest('.modal')){
+            cartModal.style.display = '';
+        }
+    })
+
+    window.addEventListener('keydown', evt => {
+        if(evt.key === 'Escape'){
+            cartModal.style.display = '';
+        }
+    })
 }
 
 export default cart

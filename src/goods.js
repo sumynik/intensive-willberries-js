@@ -1,3 +1,9 @@
-import getGoods from './modules/getGoods'
+import cart from './modules/cart'
+import search from './modules/search'
+import goods from './modules/getGoods'
 
-getGoods()
+cart()
+
+search()
+
+goods()
